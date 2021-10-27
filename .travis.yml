@@ -8,7 +8,7 @@ before_install:
   - gem update --system
   - gem update builder
   - gem install builder -v '> 3'
-  - gem 'aws-sdk', '~> 3'
+  - gem install aws-sdk -v '> 3'
   - docker build -t jessegtz7/react-test -f ./client/Dockerfile.dev ./client
 
 script:
