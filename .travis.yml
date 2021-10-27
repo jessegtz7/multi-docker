@@ -5,7 +5,8 @@ services:
   - docker
 
 before_install:
-  - gem install bundler -v '3'
+  - gem update --system
+  - gem update builder
   - docker build -t jessegtz7/react-test -f ./client/Dockerfile.dev ./client
 
 script:
